@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "thesims3";
+    src: url(../fonts/SimsLLHP.ttf);
+}
+@font-face {
+    font-family: "thesims4";
+    font-style: normal;
+    font-weight: normal;
+    src: url(../fonts/thesimssansbold.woff) format("woff");
+}
+
+@font-face {
+    font-family: "thesims4sc";
+    font-style: normal;
+    font-weight: normal;
+    src: url(../fonts/thesimssansboldsc.woff) format("woff");
+}
+
+body {
+    position: absolute;
+}
+
+#pix {
+    background-color: #856cff;
+    color: white;
+    font-family: "thesims4sc";
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 0.3rem;
+}
+#pix strong {
+    margin-left: 0.35rem;
+}
+
+.header {
+    width: 100vw;
+    background-color: #6c36ff;
+    color: white;
+}
+.header-container {
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-article h1 {
+    font-family: "thesims3";
+    font-size: 2.4rem;
+    color: #dd45d9;
+}
+.header-article {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+.header-article i:nth-child(2) {
+    color: black;
+}
+.header-article:last-child {
+    width: 52.02px;
+}
