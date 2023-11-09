@@ -238,7 +238,7 @@ body::-webkit-scrollbar {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #201f1f;
+    color: #606060;
     gap: 0.2rem;
 }
 .mobile-baseboard a i {
@@ -246,4 +246,10 @@ body::-webkit-scrollbar {
 }
 .mobile-baseboard a span {
     font-size: 0.75rem;
+}
+
+.header-scroll {
+    position: fixed;
+    top: 0;
+    z-index: 5;
 }
