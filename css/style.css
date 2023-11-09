@@ -136,6 +136,10 @@ body::-webkit-scrollbar {
     right: 0;
 }
 
+.main {
+    margin-bottom: 6rem;
+}
+
 .shop-row {
     margin-top: 3rem;
     font-family: "thesims4";
@@ -212,4 +216,34 @@ body::-webkit-scrollbar {
 }
 .shop-row:last-child {
     margin-bottom: 3rem;
+}
+
+.mobile-baseboard {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 4.125rem;
+    border-top: 1px solid #dfdfdf;
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+}
+.mobile-baseboard .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.mobile-baseboard a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #201f1f;
+    gap: 0.2rem;
+}
+.mobile-baseboard a i {
+    font-size: 1.4375rem;
+}
+.mobile-baseboard a span {
+    font-size: 0.75rem;
 }
