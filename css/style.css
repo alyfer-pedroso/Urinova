@@ -205,9 +205,10 @@ body::-webkit-scrollbar {
     color: white;
     text-decoration: none;
     display: block;
-    padding: 0.5rem 2rem;
-    font-size: 0.8rem;
-    font-weight: bold;
+    padding: 0.8rem 2.5rem;
+    font-size: 0.75rem;
+    /* font-weight: bold; */
+    border-radius: 5px;
 }
 .shop-row:last-child {
     margin-bottom: 3rem;
