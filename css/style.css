@@ -16,8 +16,13 @@
     src: url(../fonts/thesimssansboldsc.woff) format("woff");
 }
 
+html {
+    background-color: white;
+}
+
 body {
-    position: absolute;
+    position: relative;
+    width: 100vw;
 }
 
 #pix {
@@ -58,4 +63,81 @@ body {
 }
 .header-article:last-child {
     width: 52.02px;
+}
+
+.hero-carousel {
+    width: 100vw;
+    height: 100vw;
+    overflow: hidden;
+    background-color: #856cff;
+    position: relative;
+}
+.hero-carousel_card {
+    position: absolute;
+    width: 100%;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+.hero-carousel_card img {
+    width: 200%;
+    margin-left: -50%;
+}
+
+.features-carousel {
+    position: relative;
+    width: 100vw;
+    min-height: 2rem;
+    padding: 0.8rem 0;
+    overflow: hidden;
+    border-bottom: 1px solid #bdbdbd;
+}
+.features-carousel_card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-family: "thesims4";
+    top: 0;
+    left: 0;
+    transform: translateX(200%);
+    transition: transform 0.5s ease-in-out;
+}
+.features-carousel_card i {
+    font-size: 2rem;
+    color: #6c36ff;
+}
+.features-carousel_card h3 {
+    font-weight: bold;
+    color: #6c36ff;
+}
+.features-carousel_card p {
+    color: #818181;
+}
+.features-carousel_btn {
+    position: absolute;
+    padding: 0 1rem;
+    top: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    z-index: 2;
+}
+.features-carousel_btn:first-child {
+    left: 0;
+}
+.features-carousel_btn:last-child {
+    right: 0;
+}
+
+@keyframes heroCarousel {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
