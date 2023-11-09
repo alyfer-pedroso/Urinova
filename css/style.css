@@ -50,13 +50,13 @@ body {
 }
 .header-article h1 {
     font-family: "thesims3";
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #dd45d9;
 }
 .header-article {
     display: flex;
     gap: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.32rem;
 }
 .header-article i:nth-child(2) {
     color: black;

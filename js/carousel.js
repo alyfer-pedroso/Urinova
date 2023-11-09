@@ -7,7 +7,7 @@ let heroCount = 0;
 
 function heroCarousel() {
     setTimeout(() => {
-        if (heroCount > 1) {
+        if (heroCount > 0) {
             $heroCarouselCard[heroCount].style.opacity = 1;
             heroCount = 0;
             $heroCarouselCard[heroCount].style.opacity = 0;
@@ -16,7 +16,7 @@ function heroCarousel() {
         $heroCarouselCard[heroCount].style.opacity = 1;
         heroCount++;
         $heroCarouselCard[heroCount].style.opacity = 0;
-        return heroCarousel();
+        heroCarousel();
     }, 5000);
 }
 window.addEventListener("load", () => {
