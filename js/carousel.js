@@ -1,6 +1,7 @@
 const $carouselCard = document.querySelectorAll(".features-carousel_card");
 const $carouselBtn = document.querySelectorAll(".features-carousel_btn");
 const $heroCarouselCard = document.querySelectorAll(".hero-carousel_card");
+const $shopRowContent = document.querySelectorAll(".shop-row_content");
 
 //hero-carousel_card
 let heroCount = 0;
@@ -66,3 +67,22 @@ function carouselBackward() {
 $carouselBtn[0].addEventListener("click", carouselBackward);
 $carouselBtn[1].addEventListener("click", carouselForward);
 setInterval(carouselForward, 4000);
+
+//shop-row-carousel_content
+$shopRowContent.forEach((el) => {});
+
+for (let i = 0; i < $shopRowContent.length; i++) {
+    setInterval(() => {
+        if ($shopRowContent[i].scrollLeft > 0) {
+            $shopRowContent[i].scroll({
+                left: 0,
+                behavior: "smooth",
+            });
+        } else {
+            $shopRowContent[i].scroll({
+                left: $shopRowContent[i].scrollWidth,
+                behavior: "smooth",
+            });
+        }
+    }, 6000);
+}
