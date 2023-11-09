@@ -24,6 +24,9 @@ body {
     position: relative;
     width: 100vw;
 }
+body::-webkit-scrollbar {
+    display: none;
+}
 
 #pix {
     background-color: #856cff;
@@ -133,11 +136,79 @@ body {
     right: 0;
 }
 
-@keyframes heroCarousel {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
+.shop-row {
+    margin-top: 3rem;
+    font-family: "thesims4";
+    width: 100vw;
+}
+.shop-row h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: -1.5rem;
+}
+.shop-row_content {
+    width: 100%;
+    height: 100%;
+    overflow-x: scroll;
+    display: flex;
+}
+.shop-row_content::-webkit-scrollbar {
+    visibility: hidden;
+}
+.shop-row_content-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 18rem;
+    text-decoration: none;
+    color: inherit;
+    margin: 2rem 0 0;
+    padding: 0 1rem;
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    /* border: 1px solid #ccc; */
+}
+.shop-row_content-card .img-container {
+    width: 10rem;
+    height: 10rem;
+    /* border-radius: 50%; */
+    overflow: hidden;
+}
+.shop-row_content-card img {
+    width: 100%;
+    height: 100%;
+}
+.shop-row_content-card h3 {
+    height: 3.199375rem;
+    font-size: 0.8rem;
+}
+.shop-row_content-card .stars-container {
+    display: flex;
+}
+.shop-row_price {
+    font-family: "thesims4";
+    font-size: 1.2rem;
+    color: #6c36ff;
+}
+.shop-row_discount {
+    font-size: 0.8rem;
+    height: 3.199375rem;
+}
+.shop-row_discount strong {
+    font-weight: bold;
+}
+.shop-row_btn {
+    background-color: #fc5832;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 2rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.shop-row:last-child {
+    margin-bottom: 3rem;
 }
