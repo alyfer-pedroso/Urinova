@@ -141,13 +141,15 @@ body::-webkit-scrollbar {
 }
 
 .shop-row,
-.blog {
+.blog,
+.about-us {
     margin-top: 3rem;
     font-family: "thesims4";
     width: 100vw;
 }
 .shop-row h2,
-.blog h2 {
+.blog h2,
+.about-us h2 {
     font-size: 1.3rem;
     font-weight: bold;
     text-align: center;
@@ -286,6 +288,39 @@ body::-webkit-scrollbar {
     color: black;
     font-size: 0.8rem;
     font-weight: 500;
+}
+
+.about-us h2 {
+    margin-bottom: 0;
+}
+.about-us p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 0.8rem 0;
+}
+#userEmail {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    outline: none;
+    border: none;
+    background-color: #f6f6f6;
+    color: #919191;
+    width: 80%;
+}
+.input-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-btn {
+    position: absolute;
+    right: 10%;
+    color: #555;
 }
 
 .mobile-baseboard {
