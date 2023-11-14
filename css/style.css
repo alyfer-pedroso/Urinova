@@ -137,7 +137,7 @@ body::-webkit-scrollbar {
 }
 
 .main {
-    margin-bottom: 6rem;
+    /* margin-bottom: 6rem; */
 }
 
 .shop-row,
@@ -316,11 +316,180 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1.2rem;
 }
 .input-btn {
     position: absolute;
     right: 10%;
     color: #555;
+}
+.about-us_container {
+    width: 95%;
+    border-top: 1px solid #bdbdbd;
+    border-bottom: 1px solid #bdbdbd;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 2.5rem;
+    transition: height 0.5s ease-in-out;
+    text-align: left;
+}
+.about-us_container h2,
+.about-us_container p {
+    text-align: left;
+    padding: 0 1rem;
+}
+.about-us_container p strong {
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+}
+.about-us_container .about-us_Urinova {
+    color: #dd45d9;
+    font-family: "thesims3";
+    font-size: 2.5rem;
+    margin-top: -0.5rem;
+}
+.about-us_btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+.about-us_subcontainer {
+    padding: 0 1rem;
+    border-top: 1px solid #bdbdbd;
+    border-bottom: 1px solid #bdbdbd;
+}
+.about-us_subcontainer p {
+    padding: 0;
+}
+.about-us_subcontainer > p {
+    margin-bottom: 0.2rem;
+}
+.about-us_subcontainer .container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.about-us_subcontainer:nth-of-type(2) {
+    border: none;
+}
+.about-us_subcontainer:nth-of-type(4) {
+    border: none;
+    padding-bottom: 0.2rem;
+}
+.about-us_subcontainer b {
+    font-weight: bold;
+    font-size: 1rem;
+}
+.about-us_subcontainer .logo {
+    font-size: 1.5rem;
+}
+.about-us_container .about-us_btn + .about-us_Urinova {
+    color: white;
+}
+.about-us_container:nth-of-type(odd) {
+    border: none;
+}
+.about-us_container a {
+    color: #555;
+    text-decoration: none;
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    padding: 0.4rem 1rem;
+}
+.about-us_container a:last-of-type {
+    margin-bottom: 0.8rem;
+}
+.about-us_container .socialMedia {
+    display: inline-block;
+    background-color: #f3f3f3;
+    padding: 1rem;
+    font-size: 1.1rem;
+    margin-right: 1rem;
+    border-radius: 100%;
+}
+.about-us_container .socialMedia:first-of-type {
+    margin: 0 1rem;
+}
+
+.bandeiras-pagamento {
+    display: flex;
+    padding: 0 1rem;
+    justify-content: space-between;
+}
+.gataway-pagamento {
+    display: flex;
+    padding: 0.5rem 1.2rem;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.gataway-pagamento li i {
+    width: 2.3rem;
+    height: 2rem;
+    display: inline-block;
+    transform: scale(1.2);
+}
+.bandeiras-pagamento li i {
+    width: 2.3rem;
+    height: 1.4rem;
+    display: inline-block;
+}
+.icone-pagamento {
+    background-image: url(../imgs/icone-pagamento.png);
+}
+.amex {
+    background-position: -100px 0;
+}
+.aura {
+    background-position: -250px 0;
+}
+.diners {
+    background-position: -100px 0;
+}
+.elo {
+    background-position: -200px 0;
+}
+.hipercard {
+    background-position: -350px 0;
+}
+.mastercard {
+    background-position: -50px 0;
+}
+.visa {
+    background-position: 0 0;
+}
+.boleto {
+    background-position: 0 -240px;
+}
+.pix {
+    background-position: -250px -240px;
+}
+.securitySeal {
+    margin: 0 1rem 0.8rem;
+}
+
+.footer {
+    width: 100vw;
+    text-align: center;
+    color: #8a8a8a;
+    font-family: "MOntserrat", sans-serif;
+    font-size: 0.8rem;
+    margin-bottom: 4.125rem;
+}
+.footer p {
+    text-wrap: wrap;
+    padding: 1rem;
+}
+.footer p strong {
+    font-weight: bold;
+}
+
+.opened_about-us {
+    height: auto;
+}
+.opened_about-us .about-us_btn + .about-us_Urinova {
+    color: #dd45d9;
 }
 
 .mobile-baseboard {
