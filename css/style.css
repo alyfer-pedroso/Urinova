@@ -329,8 +329,8 @@ body::-webkit-scrollbar {
     border-bottom: 1px solid #bdbdbd;
     margin: 0 auto;
     overflow: hidden;
-    height: 2.5rem;
-    transition: height 0.5s ease-in-out;
+    max-height: 2.5rem;
+    transition: max-height 0.8s ease-in-out;
     text-align: left;
 }
 .about-us_container h2,
@@ -347,7 +347,7 @@ body::-webkit-scrollbar {
     color: #dd45d9;
     font-family: "thesims3";
     font-size: 2.5rem;
-    margin-top: -0.5rem;
+    /* margin-top: 0rem; */
 }
 .about-us_btn {
     display: flex;
@@ -385,9 +385,10 @@ body::-webkit-scrollbar {
 .about-us_subcontainer .logo {
     font-size: 1.5rem;
 }
-.about-us_container .about-us_btn + .about-us_Urinova {
+/* .about-us_container .about-us_btn + .about-us_Urinova {
     color: white;
-}
+    color: #dd45d9;
+} */
 .about-us_container:nth-of-type(odd) {
     border: none;
 }
@@ -486,7 +487,7 @@ body::-webkit-scrollbar {
 }
 
 .opened_about-us {
-    height: auto;
+    max-height: 100vh;
 }
 .opened_about-us .about-us_btn + .about-us_Urinova {
     color: #dd45d9;
