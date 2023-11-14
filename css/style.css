@@ -321,10 +321,17 @@ body {
     align-items: center;
     margin-bottom: 1.2rem;
 }
+.input-container div {
+    position: relative;
+}
 .input-btn {
     position: absolute;
     right: 10%;
     color: #555;
+}
+.input-container .input-btn {
+    right: 15%;
+    top: 30%;
 }
 .about-us_container {
     width: 95%;
@@ -392,7 +399,7 @@ body {
     color: white;
     color: #dd45d9;
 } */
-.about-us_container:nth-of-type(odd) {
+.about-us_container:nth-of-type(even) {
     border: none;
 }
 .about-us_container a {
@@ -589,12 +596,13 @@ body {
         display: none;
     }
 
-    .shop-row {
+    .shop-row,
+    .blog {
         margin: 6rem auto 0;
         width: 70%;
-        border-radius: 2rem;
     }
-    .shop-row h2 {
+    .shop-row h2,
+    .blog h2 {
         font-size: 1.75rem;
     }
     .shop-row_content-card {
@@ -619,6 +627,90 @@ body {
     .shop-row_btn {
         padding: 1rem 5rem;
         font-size: 1rem;
+    }
+
+    .blog .Desktop {
+        display: flex;
+    }
+    .blog-container {
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    .blog-card {
+        min-width: 20%;
+    }
+    .blog-card h3 {
+        font-size: 17px;
+    }
+    .blog-card p {
+        font-size: 1rem;
+    }
+    .blog-card a {
+        font-size: 1rem;
+    }
+    .blog-card .img-container {
+        height: 140px;
+    }
+    .blog-card .img-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+
+    .about-us {
+        margin-top: 6rem;
+    }
+    .about-us h2 {
+        font-size: 1.5rem;
+    }
+    .about-us h2 + p {
+        font-size: 1rem;
+    }
+    .about-us_container {
+        margin: 0;
+    }
+    .input-container div {
+        position: relative;
+    }
+    #userEmail {
+        width: 25rem;
+    }
+    .input-container .input-btn {
+        right: 5%;
+        top: 30%;
+    }
+
+    .about-us .input-container + span {
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+
+    .about-us_container {
+        border: none;
+        max-height: 100vh;
+        max-width: 22.5rem;
+    }
+
+    .about-us_btn i {
+        display: none;
+    }
+
+    .footer {
+        border-top: 1px solid #dfdfdf;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .footer p {
+        font-size: 1rem;
+        text-align: center;
+        margin: 0 auto;
+        padding: 2rem 0;
     }
 }
 
@@ -704,5 +796,9 @@ body {
     }
     .hamburguer-menuDesktop a:hover {
         opacity: 0.5;
+    }
+
+    .header-scroll .opened_hamburguer-menu {
+        display: flex;
     }
 }
