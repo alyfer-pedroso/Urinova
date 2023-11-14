@@ -24,9 +24,9 @@ body {
     position: relative;
     width: 100vw;
 }
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
     display: none;
-}
+} */
 
 #pix {
     background-color: #856cff;
@@ -35,9 +35,11 @@ body::-webkit-scrollbar {
     font-size: 0.7rem;
     text-align: center;
     padding: 0.3rem;
+    font-family: "Montserrat", sans-serif;
 }
 #pix strong {
     margin-left: 0.35rem;
+    font-family: "thesims4";
 }
 
 .header {
@@ -55,6 +57,7 @@ body::-webkit-scrollbar {
     font-family: "thesims3";
     font-size: 3rem;
     color: #dd45d9;
+    margin-left: -1.5rem;
 }
 .header-article {
     display: flex;
@@ -527,4 +530,179 @@ body::-webkit-scrollbar {
     position: fixed;
     top: 0;
     z-index: 5;
+}
+.Desktop,
+*[class$="Desktop"] {
+    display: none;
+}
+
+@media screen and (min-width: 800px) {
+    /* body::-webkit-scrollbar {
+        display: block;
+    } */
+
+    #pix {
+        font-size: 1rem;
+        padding: 0.4rem;
+    }
+
+    body,
+    .hero-carousel,
+    .header,
+    .shop-row,
+    .features-carousel,
+    .blog,
+    .about-us,
+    .footer {
+        width: 100%;
+    }
+
+    .hero-carousel {
+        height: 49vw;
+    }
+    .hero-carousel_card img {
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+
+    .mobile-baseboard {
+        visibility: hidden;
+    }
+
+    .features-carousel {
+        display: flex;
+        justify-content: center;
+        padding: 1.2rem 0;
+    }
+    .features-carousel_card {
+        width: 19rem;
+        transform: translateX(0);
+        position: relative;
+        cursor: pointer;
+        transition: transform 0.5s ease-in-out;
+    }
+    .features-carousel_card:nth-of-type(even) {
+        border-left: 1px solid #bdbdbd;
+        border-right: 1px solid #bdbdbd;
+    }
+    .features-carousel_btn {
+        display: none;
+    }
+
+    .shop-row {
+        margin: 6rem auto 0;
+        width: 70%;
+        border-radius: 2rem;
+    }
+    .shop-row h2 {
+        font-size: 1.75rem;
+    }
+    .shop-row_content-card {
+        justify-content: flex-start;
+    }
+    .shop-row_content-card .img-container {
+        width: 300px;
+        height: 300px;
+    }
+    .shop-row_content-card h3 {
+        font-size: 1rem;
+    }
+    .shop-row .fa-star {
+        font-size: 1.1rem;
+    }
+    .shop-row_price {
+        font-size: 1.4375rem;
+    }
+    .shop-row_discount {
+        font-size: 0.95rem;
+    }
+    .shop-row_btn {
+        padding: 1rem 5rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1210px) {
+    .mobileHeader {
+        display: none;
+    }
+
+    .header-container {
+        padding: 1rem 4rem;
+        justify-content: space-between;
+    }
+    .header-article h1 {
+        font-size: 5rem;
+    }
+    .header-article {
+        position: relative;
+        font-size: 1.64rem;
+        font-family: "Montserrat", sans-serif;
+        cursor: pointer;
+    }
+    .header .Desktop {
+        display: flex;
+        align-items: center;
+    }
+    .header-article .fa-bars {
+        font-size: 2rem;
+        display: none;
+    }
+    .header-article #search {
+        background-color: #856cff;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 1rem;
+        border-radius: 2rem;
+        font-family: "Montserrat", sans-serif;
+        width: 36.25rem;
+        transition: width 0.5s ease-in-out;
+    }
+    .header-article #search + i {
+        position: absolute;
+        right: 5%;
+        font-size: 1.45rem;
+    }
+    .header-article #search::placeholder {
+        color: white;
+    }
+    .header-article i + div {
+        font-size: 1rem;
+    }
+    .header-article i {
+        font-size: 2rem;
+    }
+    .header-article i + div span {
+        font-weight: bold;
+    }
+    .header-article i + div span b {
+        font-weight: normal;
+    }
+    .header-scroll .fa-bars {
+        display: block;
+    }
+    .header-scroll #search {
+        width: 26.875rem;
+    }
+    .hamburguer-menuDesktop {
+        display: flex;
+        justify-content: center;
+        background-color: #856cff;
+        border-bottom: 1px solid #6c36ff;
+    }
+    .header-scroll .hamburguer-menuDesktop {
+        display: none;
+    }
+    .hamburguer-menuDesktop a {
+        text-decoration: none;
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.1rem;
+        padding: 1.5rem 1rem;
+        transition: 0.5s ease;
+    }
+    .hamburguer-menuDesktop a:hover {
+        opacity: 0.5;
+    }
 }

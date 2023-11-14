@@ -30,7 +30,7 @@ window.addEventListener("load", () => {
 let featuresCount = 0;
 
 window.addEventListener("load", () => {
-    $carouselCard[featuresCount].style.transform = "translateX(0)";
+    if (window.screen.width < 800) $carouselCard[featuresCount].style.transform = "translateX(0)";
 });
 
 function carouselForward() {
@@ -64,13 +64,14 @@ function carouselBackward() {
         $carouselCard[featuresCount].style.transform = "translateX(0)";
     }
 }
-$carouselBtn[0].addEventListener("click", carouselBackward);
-$carouselBtn[1].addEventListener("click", carouselForward);
-setInterval(carouselForward, 4000);
+
+if (window.screen.width < 800) {
+    $carouselBtn[0].addEventListener("click", carouselBackward);
+    $carouselBtn[1].addEventListener("click", carouselForward);
+    setInterval(carouselForward, 4000);
+}
 
 //shop-row-carousel_content
-$shopRowContent.forEach((el) => {});
-
 for (let i = 0; i < $shopRowContent.length; i++) {
     setInterval(() => {
         if ($shopRowContent[i].scrollLeft > 0) {
